@@ -1,4 +1,18 @@
+<?php
 
+class Movie {
+    public $name;
+    public $year;
+    public $duration;
+    public $streaming;
+    public $averageVote;
+    public $genre;
+}
+
+
+
+
+?>
 
 <!DOCTYPE html>
 <html lang="en">
