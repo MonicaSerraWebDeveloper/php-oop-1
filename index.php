@@ -7,9 +7,13 @@ class Movie {
     public $streaming;
     public $averageVote;
     public $genre;
-}
+};
 
+$movie1 = new Movie();
+$movie2 = new Movie();
 
+var_dump($movie1);
+var_dump($movie2);
 
 
 ?>
