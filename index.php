@@ -1,44 +1,8 @@
 <?php
 
-class Movie {
-    public $name;
-    public $year;
-    public $duration;
-    public $streaming;
-    public $averageVote;
-    public $genre;
+require_once __DIR__ . '/models/Movie.php';
+require_once __DIR__ . '/models/db.php';
 
-    public function __construct($_name, $_year, $_duration, $_streaming, $_averageVote, $_genre) {
-        $this->name = $_name;
-        $this->year = $_year;
-        $this->duration = $_duration;
-        $this->streaming = $_streaming;
-        $this->averageVote = $_averageVote;
-        $this->genre = $_genre;
-    }
-
-    public function getTitleMovie() {
-        return $this->name;
-    }
-
-    public function getInfoMovie() {
-        return $this->year . ' - ' . $this->duration . ' - ' . $this->streaming;
-    }
-
-    public function getGenre() {
-        return implode(', ', $this->genre);
-    }
-}
-
-$movie1 = new Movie('Love Actually', 2003, '2h 15m', 'Netflix', 7.6, ['Commedia', 'Romance']);
-$movie2 = new Movie('Harry, ti presento Sally', 1989, '1h 36m', 'Disney+', 7.7, ['Commedia', 'Romance']);
-$movie3 = new Movie('Il diario di Bridget Jones', 2001, '1h 37m', 'Disney+', 6.8, ['Commedia', 'Romance']);
-
-$movies = [
-    $movie1,
-    $movie2,
-    $movie3
-]
 
 ?>
 
